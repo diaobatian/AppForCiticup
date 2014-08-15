@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/frame">
+
+      <ImageView
+            android:id="@+id/badgeBtn"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            
+            android:layout_weight="1.0"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:id="@+id/badgebtn_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="7dp"
+            android:visibility="gone" >
+            <ImageView
+                android:id="@+id/badgebtn_img"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                 android:layout_gravity="right|top"
+                android:src="@drawable/g_unread_messages_bg" />
+
+       </RelativeLayout>
+    </FrameLayout>
+
+</merge>
+<!-- 
+ android:drawablePadding="2.0dip"
+ android:layout_marginTop="2.0dip"
+ -->

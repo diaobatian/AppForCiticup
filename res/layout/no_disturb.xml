@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ <ScrollView 
+    android:id="@+id/scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true" >
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mobile_set"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/g_child_page_bg_color"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/mobile_set_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/ic_comm_title_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/set"
+        android:textColor="@color/title_color"
+        android:textSize="@dimen/set" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/invisiable"
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/invisiable_setbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_butn_toggle"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@drawable/grayline" />
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dip"
+                android:text="@string/no_disturb"
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+            <ToggleButton
+                android:id="@+id/nodisturb_setbn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_butn_toggle"
+                android:checked="true"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+   
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+</LinearLayout>
+<!-- </ScrollView> -->

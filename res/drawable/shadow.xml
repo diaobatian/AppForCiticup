@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item >
+
+        <shape >
+            <corners
+                android:bottomLeftRadius="9.0dip"
+                android:bottomRightRadius="9.0dip"
+                android:topLeftRadius="9.0dip"
+                android:topRightRadius="9.0dip" />
+
+            <padding
+                android:bottom="3.0dip"
+                android:left="3.0dip"
+                android:right="3.0dip"
+                android:top="3.0dip" />
+
+            <gradient android:startColor="@color/my_gray"
+
+               android:endColor="@color/my_gray"
+
+                android:type="linear"
+
+               android:angle="270"/>
+
+        </shape>
+
+    </item>
+
+     <item android:top="3dip" android:right="3dip"  android:bottom="3dip" android:left="3dip">
+
+        <shape >
+
+      
+
+            <gradient android:startColor="@color/my_gray"
+
+               android:endColor="@color/my_gray"
+				
+                android:type="linear"
+
+               android:angle="270"/>
+
+        </shape>
+
+    </item>
+
+</layer-list>
+<!--  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape 
+            android:shape="rectangle">
+        <solid android:color="@android:color/darker_gray" />
+       
+        </shape>
+    </item>
+    <item android:right="1dp" android:left="1dp" android:bottom="2dp" android:top="2dp">
+        <shape 
+            android:shape="rectangle">
+        <solid android:color="@color/title_bar"/>
+       
+        </shape>
+    </item>
+</layer-list>-->

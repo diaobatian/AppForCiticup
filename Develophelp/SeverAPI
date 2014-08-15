@@ -1,0 +1,44 @@
+邓银忠  17:43:56
+//测服
+//#define  CHAT_SERVER_ADDR  [NSString stringWithFormat:@"http://test.mobilechat.im:8000"]
+//#define  MANAGE_SERVER_ADDR  [NSString stringWithFormat:@"http://test.mobilechat.im"]
+//主服
+#define  CHAT_SERVER_ADDR  [NSString stringWithFormat:@"http://chat.mobilechat.im:8000"]
+#define  MANAGE_SERVER_ADDR  [NSString stringWithFormat:@"http://static.mobilechat.im:80"]
+
+//IOS推送，标记一直在线
+#define KEEPONLINE_API [NSString stringWithFormat:@"%@/userver/keeponline",CHAT_SERVER_ADDR]
+//登陆验证接口  -- manage 服务器
+#define LOGIN_API [NSString stringWithFormat:@"%@/login",MANAGE_SERVER_ADDR]
+//客服上线通知 -- chat 服务器
+#define USERVER_ONLINE_API [NSString stringWithFormat:@"%@/userver/online",CHAT_SERVER_ADDR]
+//客服离线通知 -- chat 服务器
+#define USERVER_OFFLINE_API [NSString stringWithFormat:@"%@/userver/offline",CHAT_SERVER_ADDR]
+//客服隐身
+#define USERVER_HIDE_API [NSString stringWithFormat:@"%@/userver/hide",CHAT_SERVER_ADDR]
+//获取客服信息接口 -- manage 服务器
+#define GET_USINFO_API [NSString stringWithFormat:@"%@/uchat",MANAGE_SERVER_ADDR]
+//获取未读留言接口 -- manage 服务器
+#define GET_UNReadMsgs_API [NSString stringWithFormat:@"%@/userver/getUnreadLeavemsgs",MANAGE_SERVER_ADDR]
+//处理留言接口 --发至 manage 服务器
+#define HANDLE_LeaveMsg_MANAGE_API [NSString stringWithFormat:@"%@/userver/saveLeaveMsg",MANAGE_SERVER_ADDR]
+//处理留言接口 --发至 chat 服务器 
+#define HANDLE_LeaveMsg_CHAT_API [NSString stringWithFormat:@"%@/userver/saveLeaveMsg",CHAT_SERVER_ADDR]
+//找回密码 -- 发送到 manage 服务器
+#define FIND_BACK_PSW_API [NSString stringWithFormat:@"%@/password/find",MANAGE_SERVER_ADDR]
+//获取在线用户列表 -- chat 服务器
+#define GET_ONLINE_MOBILE_API [NSString stringWithFormat:@"%@/userver/getOnline",CHAT_SERVER_ADDR]
+//获取离线用户列表 -- chat 服务器
+#define GET_OFFLINE_MOBILE_API [NSString stringWithFormat:@"%@/userver/getOffline",CHAT_SERVER_ADDR]
+//长连接 -- pool 消息 --chat 服务器 
+#define POLL_MESSAGE_API [NSString stringWithFormat:@"%@/userver/poll",CHAT_SERVER_ADDR]
+//客服发送消息接口 -- chat 服务器
+#define  SEND_MESSAGE_API [NSString stringWithFormat:@"%@/userver/sendMsg",CHAT_SERVER_ADDR]
+//获取聊天记录--chat 服务器 /userver/getMsgs
+#define  GET_MESSAGES_API [NSString stringWithFormat:@"%@/userver/getMsgs",CHAT_SERVER_ADDR]
+//获取企业资料 -- manage 服务器 /unit/info/  GET  80端口 
+#define GET_UNIT_INFO_API [NSString stringWithFormat:@"%@/unit/info",MANAGE_SERVER_ADDR]
+//意见反馈 -- manage 服务器  /sendsuggest  POST 方法 80端口
+#define FEEDBACK_API [NSString stringWithFormat:@"%@/sendsuggest",MANAGE_SERVER_ADDR]
+//提交手机备注信息--chat 服务器 /userver/mobiledata
+#define  REMARK_MOBILE_API [NSString stringWithFormat:@"%@/userver/mobiledata",CHAT_SERVER_ADDR]

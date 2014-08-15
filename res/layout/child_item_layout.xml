@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="65dp"
+    android:id="@+id/linear01"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+	
+    <ImageView
+        android:id="@+id/my_img"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/imgae_view"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            >
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+             	android:maxWidth="166dp"
+             	android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:text="454543534545"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                />
+            <!-- 
+               android:background="@color/list_item_bg"
+                 android:textColor="@color/lvmsg_item_time"
+                 
+                     android:layout_toRightOf="@id/item_name"
+             -->
+            <TextView
+                android:id="@+id/item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:singleLine="true"
+                android:text="afdsafsafasf"
+                android:textSize="13sp"
+            	android:layout_alignParentRight="true"
+            	android:layout_marginRight="10dip"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="#B3B3B3"
+                 />
+
+        </RelativeLayout>
+        
+        <TextView
+           	android:ellipsize="end"
+            android:id="@+id/item_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxWidth="300dp"
+            android:text="afdsafsafasf"
+            android:singleLine="true"
+            android:textColor="#B3B3B3"
+            android:textSize="13sp"
+            android:layout_marginBottom="10dip"
+             />
+        
+    </LinearLayout>
+    <!--  
+    <ImageView
+        android:id="@+id/lvmsg_director"
+        android:layout_width="15dip"
+        android:layout_height="15dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:src="@drawable/team_into1"
+        android:contentDescription="@string/imgae_view"
+         />
+-->
+</LinearLayout>

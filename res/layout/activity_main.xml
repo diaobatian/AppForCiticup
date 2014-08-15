@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+  	android:id="@+id/leave_msg"
+  	android:focusable="false"
+  	android:descendantFocusability="beforeDescendants"
+  	 android:background="@color/g_child_page_bg_color"
+    >
+
+    <RelativeLayout
+        android:focusable="false"
+        android:id="@+id/chat_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="0dip"
+        android:background="@drawable/ic_comm_title_bg">
+
+        
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/head"
+          android:text="留言"
+          android:layout_centerInParent="true"
+          android:textSize="@dimen/set"
+          android:textColor="@color/lvmsg_title_txt"
+          />
+      	
+    </RelativeLayout>
+	<TextView 
+	    android:id="@+id/lmsg_network_ok"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:layout_below="@id/chat_head"
+	    android:text="@string/network"
+	    android:textSize="15sp"
+	    android:gravity="center_vertical"
+	  	android:drawableRight="@drawable/team_into1"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		android:visibility="gone"
+	    />
+	 
+	<FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lmsg_network_ok"
+         >
+
+	   
+	    
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#FFF"
+            android:divider="#FFF"
+            android:dividerHeight="0dp"
+            android:fadingEdgeLength="0dip"
+     	    android:choiceMode="singleChoice"
+             />
+       
+        <ViewStub
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout="@layout/lvmsg_empty" />
+    </FrameLayout>
+</RelativeLayout>

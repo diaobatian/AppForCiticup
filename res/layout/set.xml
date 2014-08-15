@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:id="@+id/setfra"  
+     >
+<TableLayout  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    >
+<TextView 
+    android:id="@+id/set"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:text="@string/set"
+    android:textSize="@dimen/set"
+    android:gravity="center_horizontal"
+    />
+<TableRow 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:layout_marginTop="3dp"
+    
+    >
+
+<TextView
+    android:id="@+id/alert" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/alterpassword"
+    android:textSize="@dimen/alterpassword"
+    android:layout_gravity="center_vertical|left"
+    />  
+<RelativeLayout
+    android:layout_weight="1"
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/team_into1"
+    android:layout_alignParentRight="true"
+    android:id="@+id/alertiv"
+    android:clickable="true"
+     />   
+</RelativeLayout>
+
+</TableRow>
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="0.3dp"
+    android:background="@drawable/line1"
+    />
+<TableRow  android:background="@drawable/background"
+     >
+
+<TextView 
+    android:id="@+id/vibrator"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/vibrator_remind"
+    android:textSize="@dimen/alterpassword"
+    android:layout_gravity="center_vertical|left"
+    />
+<RelativeLayout 
+    android:layout_weight="1"
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    >
+<ToggleButton
+    android:id="@+id/vibratorbn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_butn_toggle"
+    android:layout_alignParentRight="true"
+    android:checked="true"
+    android:gravity="right"
+    android:textOn=""
+    android:textOff=""
+    android:text="" />
+</RelativeLayout>
+</TableRow>
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="0.3dp"
+    android:background="@drawable/line1"
+    />
+<TableRow 
+    android:background="@drawable/background"
+    >
+<TextView
+    android:id="@+id/sound"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sound_remind"
+    android:textSize="@dimen/alterpassword"
+    android:layout_gravity="center_vertical|left"
+    />
+<RelativeLayout 
+    android:layout_weight="1"
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    >
+    <ToggleButton
+    
+    android:id="@+id/soundbn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_butn_toggle"
+    android:checked="true"
+    android:layout_gravity="right|center_vertical"
+    android:layout_alignParentRight="true"
+    android:textOn=""
+    android:textOff=""
+    android:text=""
+    />
+</RelativeLayout>
+
+
+</TableRow>
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="0.3dp"
+    android:background="@drawable/line1"
+    />
+<TableRow 
+    android:layout_marginTop="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/version_examine"
+    android:id="@+id/version"
+    android:textSize="@dimen/alterpassword"
+    android:layout_gravity="center_vertical|left"
+    />  
+</TableRow>
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="0.3dp"
+    android:background="@drawable/line1"
+    />
+<TableRow 
+    android:background="@drawable/background"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/feedback"
+    android:textSize="@dimen/alterpassword"
+    android:id="@+id/feedback"
+    android:layout_gravity="center_vertical|left"
+    />
+<RelativeLayout 
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    android:layout_weight="1"
+    >
+<ImageView
+    android:contentDescription="@string/app_name"
+    android:id="@+id/feedbackbn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/team_into1"
+    android:layout_alignParentRight="true"
+    />    
+</RelativeLayout>
+
+</TableRow>
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="0.3dp"
+    android:background="@drawable/line1"
+    />
+<TableRow 
+    android:background="@drawable/background"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/contact_us"
+    android:textSize="@dimen/alterpassword"
+    android:id="@+id/contanct"
+    android:layout_gravity="center_vertical|left"
+    />
+<RelativeLayout 
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    android:layout_weight="1"
+    >
+<ImageView
+    android:id="@+id/contactbn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/team_into1"
+    android:layout_alignParentRight="true"
+ 	android:contentDescription="@string/app_name"
+    />
+</RelativeLayout>
+
+</TableRow>
+<Button
+    android:layout_marginTop="1dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/exit_login"
+    android:background="@drawable/background"
+    />
+</TableLayout>
+</FrameLayout>

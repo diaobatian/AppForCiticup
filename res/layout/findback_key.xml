@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g_child_page_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rili_head"
+        style="@style/head_style"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/ic_comm_title_bg" >
+
+        <TextView
+            android:id="@+id/rili_head_text"
+            style="@style/head_middle_text"
+            android:text="@string/findback_key"
+            android:textColor="@color/title_color"
+            android:textSize="@dimen/set" />
+
+        <Button
+            android:id="@+id/back"
+            style="@style/head_left_button"
+            android:layout_width="45dip"
+            android:layout_height="46dip"
+            android:background="@drawable/btn_back_background" />
+    </RelativeLayout>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background" >
+
+        <EditText
+            android:id="@+id/newinput_your_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="true"
+            android:hint="@string/input_your_email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#a8a8a8" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/send_email"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/login_btn_background"
+            android:text="@string/send_email"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

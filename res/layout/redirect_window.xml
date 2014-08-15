@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/liner_info"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/g_child_page_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_comm_title_bg" >
+
+        <Button
+            android:id="@+id/chat_back"
+            android:layout_width="45dip"
+            android:layout_height="46dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back_background"
+            android:gravity="center" />
+
+        <Button
+            android:id="@id/redirct_button"
+            android:layout_width="40dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/user_btn_background"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:singleLine="true"
+            android:text="顾客资料"
+            android:textColor="@color/chat_title_txt"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lin001"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/g_child_page_bg_color"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lin002"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="left|center_vertical" >
+
+                <EditText
+                    android:id="@+id/nametext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:hint="姓名" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/grayline" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="1dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/phonetext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:hint="电话"
+                    android:imeOptions="actionDone"
+                    android:numeric="integer" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:background="@drawable/grayline" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginTop="1dp" >
+
+                <EditText
+                    android:id="@+id/qqtext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@null"
+                    android:hint="QQ"
+                    android:numeric="integer" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@drawable/grayline" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="40dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center_vertical"
+                android:text="预约"
+                android:textColor="@color/gray"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/appointment"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="50dip"
+                android:layout_height="57dp"
+                android:layout_marginLeft="12dip"
+                android:checked="false"
+                android:gravity="center_vertical" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="75dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="加入黑名单"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <CheckBox
+                    android:id="@+id/heimingdan"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="50dip"
+                    android:layout_height="57dp"
+                    android:layout_marginLeft="15dip"
+                    android:checked="false"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/submit_user_info"
+            android:layout_width="fill_parent"
+            android:layout_height="45dip"
+            android:background="@drawable/login_btn_background"
+            android:text="保存"
+            android:layout_marginLeft="10dip"
+        	android:layout_marginRight="10dip"
+        	android:layout_marginBottom="10dip"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

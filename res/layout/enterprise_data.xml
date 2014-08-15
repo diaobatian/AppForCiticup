@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+        <RelativeLayout
+        android:id="@+id/rili_head"
+        style="@style/head_style" >
+
+        <TextView
+            android:id="@+id/rili_head_text"
+            style="@style/head_middle_text"
+            android:text="@string/enterprise_data" />
+		<Button
+            android:id="@+id/back"
+            style="@style/head_left_button"
+            android:text="@string/back" />
+        <Button
+            android:id="@+id/modify"
+            style="@style/head_right_button"
+            android:text="@string/modify" />
+    </RelativeLayout>
+   <TableRow
+    android:background="@drawable/maintab_toolbar_bg"
+android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/enterprise_name"
+    android:textSize="@dimen/text_size_7"
+    android:layout_marginLeft="5dip"
+    android:gravity="left|center_vertical"
+    android:layout_gravity="center_vertical"
+    />
+<EditText
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/newenterprise_name"
+    />
+</TableRow>
+<TableRow 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    
+    >
+
+<TextView
+    android:id="@+id/enterprise_sign" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/enterprise_sign"
+    android:textSize="@dimen/enterprise_name"
+    android:layout_gravity="center_vertical|left"
+    />  
+<RelativeLayout
+    android:layout_weight="1"
+    android:layout_width="0dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|right"
+    >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/team_into1"
+    android:layout_alignParentRight="true"
+    android:id="@+id/newenterprise_sign"
+    android:clickable="true"
+     />   
+</RelativeLayout>
+
+</TableRow>
+   <TableRow
+    android:background="@drawable/maintab_toolbar_bg"
+android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/contactor"
+    android:textSize="@dimen/text_size_7"
+    android:layout_marginLeft="5dip"
+    android:gravity="left|center_vertical"
+    android:layout_gravity="center_vertical"
+    />
+<EditText
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/newcontactor"
+    />
+</TableRow>
+   <TableRow
+    android:background="@drawable/maintab_toolbar_bg"
+android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/phone"
+    android:textSize="@dimen/text_size_7"
+    android:layout_marginLeft="5dip"
+    android:gravity="left|center_vertical"
+    android:layout_gravity="center_vertical"
+    />
+<EditText
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/newphone"
+    />
+</TableRow>
+   <TableRow
+    android:background="@drawable/maintab_toolbar_bg"
+android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/phone_site"
+    android:textSize="@dimen/text_size_7"
+    android:layout_marginLeft="5dip"
+    android:gravity="left|center_vertical"
+    android:layout_gravity="center_vertical"
+    />
+<EditText
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/newphone_site"
+    />
+</TableRow>
+   <TableRow
+    android:background="@drawable/maintab_toolbar_bg"
+android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    >
+<TextView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/leave_word_mail"
+    android:textSize="@dimen/text_size_7"
+    android:layout_marginLeft="5dip"
+    android:gravity="left|center_vertical"
+    android:layout_gravity="center_vertical"
+    />
+<EditText
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/newleave_word_mail"
+    />
+</TableRow>
+</TableLayout>

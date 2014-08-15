@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/chat_res"
+    android:clickable="true"
+   	android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/chatting_bg_default_thumb"
+    >
+    <!-- 
+ <android.support.v4.view.ViewPager
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_gravity="center"
+      android:scaleType="fitXY"
+      android:id="@+id/pager"
+     />
+ -->
+<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:id="@+id/chat_head_rel"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_comm_title_bg"
+        >
+        <!-- 
+        #2DBBAF
+         -->
+        <Button 
+            android:id="@+id/chat_back"
+            android:layout_width="45dip"
+            android:layout_height="46dip"
+         
+            android:gravity="center"
+           
+          	android:layout_centerVertical="true"
+            android:background="@drawable/btn_back_background"
+            />
+        <!--   
+         android:layout_marginLeft="5dip"
+            android:text="@string/back"
+            android:background="@drawable/back_btn"
+            android:textColor="@color/chat_back_btn_txt"
+         android:layout_marginTop="3dip"
+            android:layout_marginBottom="3dip" -->
+        <TextView 
+            android:id="@+id/chat_head_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/chat_back"
+            android:gravity="center_vertical|center_horizontal"
+           	android:layout_toLeftOf="@+id/redirct_button"
+           	android:layout_centerInParent="true"
+           	android:textColor="@color/chat_title_txt"
+           	android:singleLine="true"
+           	android:textSize="20sp"
+        	
+            />
+        <Button 
+            android:id="@+id/kefuinfo_button"
+            android:layout_width="40dip"
+            android:layout_height="50dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+       	 android:background="@drawable/user_btn_background"
+            />
+        <!--   
+              android:background="@drawable/login_btn_background"
+          android:text="@string/user_info"
+            android:textColor="@color/chat_back_btn_txt" -->
+    </RelativeLayout>
+    <!--  
+    <ListView 
+        	android:descendantFocusability="afterDescendants"
+    		android:id="@+id/chat_list" 
+    		android:layout_below="@id/chat_head_rel"
+    		android:layout_above="@+id/chat_foot_linear"
+    		android:paddingTop="5dip"
+    		android:dividerHeight="7dip"
+    		android:transcriptMode="alwaysScroll" 
+    		android:listSelector="#00ffffff"
+    		android:fadingEdgeLength="0dip"
+    		android:cacheColorHint="#00000000"
+         	android:divider="#00000000"
+    		android:background="@drawable/index_bg"
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent"/>
+    		-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/chat_head_rel"
+        android:layout_above="@+id/chat_foot_linear"
+        android:background="@drawable/chatting_bg_default_thumb">
+	  <TextView 
+     android:id="@+id/networkstate"
+     android:layout_width="fill_parent"
+     android:layout_height="40dip"
+     android:background="@color/networkstate"
+     android:gravity="center"
+     android:text="@string/networkstateinfofresh"
+	 android:paddingLeft="10dip"
+	 android:paddingRight="10dip"
+	 android:visibility="gone"
+     />
+       <com.citi.mc.utils.PullToRefreshListView
+            android:layout_below="@+id/networkstate"
+            android:id="@+id/android:list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:fastScrollEnabled="true"
+            android:overScrollMode="always"
+            android:transcriptMode="normal"
+          	android:background="@drawable/chatting_bg_default_thumb"/>
+          
+            </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/chat_foot_linear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/chat_foot_rel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+                <!-- #666666 -->
+
+                <ImageView
+                    android:id="@+id/chat_expression"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dip"
+                    android:src="@drawable/experssion_btn_background"
+                    android:contentDescription="@string/app_name"
+                  />
+                <!--    android:background="@drawable/experssion_bg"
+                    android:src="@drawable/chat_expression" 
+                      android:hint="@string/chat_hint"-->
+
+                <EditText
+                    android:id="@+id/chat_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dip"
+                    android:inputType="textMultiLine"
+                    android:layout_marginLeft="3dip"
+                    android:layout_toLeftOf="@+id/editSend"
+                    android:layout_toRightOf="@id/chat_expression"
+                    android:background="@drawable/bg_message_text_edit"
+                  
+                    android:maxLines="4"
+                    android:paddingLeft="10dip"
+                    android:singleLine="false" />
+                <!-- chat_edittext_bg -->
+<!-- experssion_bg  android:background="@drawable/edit_text_bg" -->
+                <Button
+                    android:id="@+id/editSend"
+                    android:layout_width="63dip"
+                    android:layout_height="40dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="6dip"
+                    android:background="@drawable/send_btn_background"
+                    android:text="@string/send_msg"
+                    android:textColor="@color/title_color"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+         
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:scrollbarStyle="insideInset"
+                android:background="@color/white"
+                android:visibility="gone" />
+   <!--  
+            <LinearLayout
+                android:id="@+id/img_lay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/chat_right_itm_bg"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dip"
+                    android:clickable="true"
+                    android:src="@drawable/notcurrent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:src="@drawable/notcurrent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:src="@drawable/notcurrent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:src="@drawable/notcurrent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:src="@drawable/notcurrent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:src="@drawable/notcurrent" />
+            </LinearLayout>
+            -->
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

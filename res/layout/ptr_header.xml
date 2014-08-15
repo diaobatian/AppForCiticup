@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/ptr_headerContainer"
+    android:background="#938A8A"
+    >
+    <RelativeLayout android:id="@+id/ptr_id_header" style="@style/ptr_header">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/ptr_id_wrapper"
+            android:layout_toLeftOf="@+id/ptr_id_textwrapper"
+            >
+	    <ImageView 
+	        android:id="@+id/ptr_id_image" 
+	        style="@style/ptr_arrow" 
+	       
+	        />
+	    <ProgressBar 
+	        android:id="@+id/ptr_id_spinner" 
+	        style="@style/ptr_spinner" 
+	        android:layout_marginRight="10dp"
+	        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_centerInParent="true"
+             android:id="@id/ptr_id_textwrapper" 
+             style="@style/ptr_textwrapper">
+            <TextView android:id="@+id/ptr_id_text" style="@style/ptr_text"
+                android:textColor="@color/white"
+                 />
+            <TextView android:id="@+id/ptr_id_last_updated" style="@style/ptr_last_updated" 
+                android:textColor="@color/white"
+                />
+           
+
+        </LinearLayout>
+
+    </RelativeLayout>
+   
+</LinearLayout>

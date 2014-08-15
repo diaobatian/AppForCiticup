@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/g_child_page_bg_color"
+    android:orientation="vertical" >
+
+    <!-- #F2F2F0 @drawable/back_ground -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/g_common_title_bar_black_repeatx" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/login"
+            android:textColor="@color/title_color"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:id="@+id/loginProgressBar"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/progressText" />
+
+        <TextView
+            android:id="@id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="正在登录" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="60dip"
+                android:background="@drawable/login_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingLeft="10.0dip" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/email"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/login_et_momoid"
+                    android:layout_width="175dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:numeric="integer"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textStyle="bold" />
+				<RelativeLayout 
+				    android:layout_width="wrap_content"
+				    android:layout_height="50dip"
+				    >
+				      <ImageView
+	                    android:id="@+id/get_email"
+	                    android:layout_width="20dp"
+	                    android:layout_height="20dp"
+	                    android:src="@drawable/downarrow" 
+	                    android:layout_marginRight="5dp"
+	                    android:layout_alignParentRight="true"
+	                  	android:layout_centerVertical="true"
+                    />
+				</RelativeLayout>
+              
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/login_bg1"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/password"
+                    android:textColor="@color/gray"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/login_et_pwd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="5dip" >
+
+                <CheckBox
+                    android:id="@+id/autosavepassword"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="25dp"
+                    android:layout_height="31dip"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/autosavepassword"
+                    android:singleLine="true"
+                    android:text="@string/autosavepassword"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <!-- #2DBBAF -->
+
+            <Button
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="20dip"
+                android:layout_weight="0.17"
+                android:background="@drawable/login_btn_background"
+                android:text="@string/login"
+                android:textColor="@color/title_color"
+                android:textSize="20sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/forgget_key"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:clickable="true"
+        android:gravity="right"
+        android:text="@string/forgget_key"
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="10dip"
+        android:text="@string/register1"
+        android:textColor="#000000"
+        android:textSize="13sp" />
+
+</LinearLayout>
