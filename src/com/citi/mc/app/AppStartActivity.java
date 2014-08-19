@@ -41,7 +41,7 @@ public class AppStartActivity extends Activity
 			public void run()
 			{ 
 				Intent intent = new Intent();
-				Log.i("Task:"+getTaskId(), "startActivity" +   " test416Task.");
+//				Log.i("Task:"+getTaskId(), "startActivity" +   " test416Task.");
 				intent.setClass(AppStartActivity.this, LoginActivity.class);
 				startActivity(intent);
 				AppStartActivity.this.finish();

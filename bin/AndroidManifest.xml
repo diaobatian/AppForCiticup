@@ -234,7 +234,7 @@
             </intent-filter>
         </receiver>
         <meta-data android:name="BaiduMobAd_CHANNEL" android:value="developer_default"/>
-        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="62fd86ccda"/>
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="132b794bc5"/>
         <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true"/>
         <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="APP_START"/>
         <meta-data android:name="BaiduMobAd_TIME_INTERVAL" android:value="24"/>
@@ -248,7 +248,7 @@
         <!-- 目前这个渠道统计功能的报表还未开放。-->
         <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
         <!-- Required. AppKey copied from Portal -->
-        <meta-data android:name="JPUSH_APPKEY" android:value="09afbba276057d5b800bce14"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="7d97e554214ef474018c1d96"/>
         
         
   		

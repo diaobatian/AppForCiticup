@@ -31,7 +31,7 @@ public class ChatExpressionAdapter extends BaseAdapter {
 	private Context context;
 	private LayoutInflater layoutInflater;
 	private static final int SIZE = 20;
-	public ChatExpressionAdapter(Context context, List<Expression>list)
+	public ChatExpressionAdapter(Context context, List<Expression> list)
 	{
 		
 		exp = new ArrayList<Expression>();
